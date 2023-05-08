@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <title>James Lee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="navigation">
+            <a href="#hero" id="top" class="active anchor">Home</a>
+            <a href="#about" class="anchor">About</a>
+            <a href="#projects" class="anchor">Projects</a>
+            <a href="#contact" class="anchor">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- TILE: HERO -->
+        <div id="hero">
+            <h2 id="text">Hello, I'm James!</h2>
+            <img src="images/me.png" id="profile-pic">
+            <h3>I'm an aspiring Software Engineer.</h3>
+        </div>
+        
+        <!-- DOWN ARROW -->
+        <!--
+        <div id="down-arrow" class="down-arrow">
+        </div>-->
+        <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+        </div>
+        
+        <!-- TILE: ABOUT ME -->
+        <div id="about" class="tile about">
+            <h2>About Me</h2>
+            <p>My name is James Lee. I'm an aspiring Software Engineer based in Seattle, WA.</p>
+            <p>I'm a Computer Science major at Southern New Hampshire University. I'll be graduating in July 2023 (with a 4.0 GPA!).</p>
+            <p>I also have a Bachelor's degree in Mechanical Engineering. I have combined 7+ years of experience as a Project Engineer and Data Analyst.</p>
+            
+            <div class="social-buttons">
+                <a href="https://github.com/jhblee21" class="github" target="_blank">
+                    <img src="images/github-mark.png" class="img" alt="github-mark" title="github-mark"></a>
+                <a href="https://www.linkedin.com/in/jhblee21/" class="linkedin" target="_blank">
+                    <img src="images/LI-In-Bug.png" class="img" alt="linkedin-mark" title="linkedin-mark"></a> 
+            </div>
+
+            <p><strong>Languages and Tools:</strong></p>
+            
+            <div class="tech-stack">
+                <img src="images/logo-html5.png" class="img" alt="HTML5" title="HTML5">
+                <img src="images/logo-css3.png" class=" img css3" style="width: 5.89vw; height: 5.89vw" position="relative" alt="CSS3" title="CSS3">
+                <img src="images/logo-js.png" class="img" alt="JS" title="JS">
+                <img src="images/logo-bootstrap.png" class="img" alt="bootstrap" title="bootstrap">
+                <img src="images/logo-java.png" class="img" alt="java" title="java">
+                <img src="images/logo-cpp.png" class="img" alt="cpp" title="cpp">
+                <img src="images/logo-python.jpg" class="img" alt="python" title="python">
+            </div>
+        </div>
+
+        <!-- TILE: PROJECTS -->
+        <div id="projects" class="tile projects">
+            <h2>Projects</h2>
+            <!-- PROJECT: QR CODE GENERATOR -->
+            <div class="project-container">
+                <div class="qr-code-generator">
+                    <h4><a href="https://jhblee21.github.io/QR-Code-Generator" class="title" target="_blank">QR Code Generator</a></h4>
+                    <div class="social-buttons">
+                        <a href="https://github.com/jhblee21/QR-Code-Generator" class="github" target="_blank">
+                            <img src="images/github-mark.png" class="img" alt="github-mark" title="github-mark"></a>
+                    </div>
+                    <figure class="devices">
+                        <div class="device laptop">
+                            <div id="laptop" class="device-screen">
+                                <img src="images/qrcodegenerator-laptop.png" style="width: 40vw">
+                            </div>
+                        </div>
+                    </figure>
+                    <p style="padding-bottom: 1vw">A custom QR code generator utilizing QR code generator web API at api.qrserver.com. This generator allows users to customize the QR code color,
+                        the background color, size of the QR code, and the outer margins. Users can generate QR codes in one of 5 formats: .png, .gif, .jpeg, .jpg, and .svg.
+                    </p>
+                    <p style="padding: 1vw"><strong>Built with:</strong></p>
+
+                    <div class="tech-stack">
+                        <img src="images/logo-html5.png" class="img" alt="HTML5" title="HTML5">
+                        <img src="images/logo-css3.png" class="img css3" style="width: 5.89vw; height: 5.89vw" position="relative" alt="CSS3" title="CSS3">
+                        <img src="images/logo-js.png" class="img" alt="JS" title="JS">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJECT: WEATHER WIDGET APP -->
+            <div class="project-container">
+                <div class="weather-widget">
+                    <h4><a href="https://jhblee21.github.io/Weather-Widget-App/" class="title" target="_blank">Weather Widget</a></h4>
+                    <div class="social-buttons">
+                        <a href="https://github.com/jhblee21/Weather-Widget-App" class="github" target="_blank">
+                            <img src="images/github-mark.png" class="img" alt="github-mark" title="github-mark"></a>
+                    </div>
+                    <figure class="devices">
+                        <div class="device laptop">
+                            <div id="laptop" class="device-screen">
+                                <img src="images/videos-laptop.gif" style="width: 40.3vw">
+                            </div>
+                        </div>
+                    </figure>
+                    <p>A simple weather widget app utilizing the OpenWeatherMap Weather API. This app displays the current weather (clear, clouds, rain, snow, or haze), 
+                        temperature (in Fahrenheit), humidity (%), and wind speed (mph) for a city.
+                    </p>
+
+                    <p style="padding: 1vw"><strong>Built with:</strong></p>
+
+                    <div class="tech-stack">
+                        <img src="images/logo-html5.png" class="img" alt="HTML5" title="HTML5">
+                        <img src="images/logo-css3.png" class="img css3" style="width: 5.89vw; height: 5.89vw" position="relative" alt="CSS3" title="CSS3">
+                        <img src="images/logo-js.png" class="img" alt="JS" title="JS">
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- PROJECT: PYTHON TEXT ADVENTURE GAME -->
+            <div class="project-container">
+                <div class="python-text-adventure-game">
+                    <h4>Python Text Adventure Game</h4>
+                    <div class="social-buttons">
+                        <a href="https://github.com/jhblee21/Python-Text-Adventure-Game" class="github" target="_blank">
+                            <img src="images/github-mark.png" class="img" alt="github-mark" title="github-mark"></a>
+                    </div>
+                    <figure class="devices">
+                        <div class="device laptop">
+                            <div id="laptop" class="device-screen">
+                                <img src="images/pythontextadventuregame.png" style="width: 40.3vw">
+                            </div>
+                        </div>
+                    </figure>
+                    <p>This is my take on the classic choose-your-own-adventure text game written in Python. You must explore the kingdom's castle in order to solve the 
+                        puzzle before facing the giant evil python! Refer to the Design Document for the Storyboard and Pseudocode.
+                    </p>
+
+                    <p style="padding: 1vw"><strong>Built with:</strong></p>
+
+                    <div class="tech-stack">
+                        <img src="images/logo-python.jpg" class="img" alt="python" title="python">
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- FOOTER: CONTACT ME -->
+        <div class="footer">
+            <div id="contact">
+            <a href="mailto:jameshblee21@gmail.com?subject=Portfolio Contact Form">Contact Me!</a>
+            </div>
+            <p>Let's connect! I would love to hear from you!</p>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
