@@ -245,7 +245,6 @@ p {
     text-align: center;
     justify-content: space-between;
     align-items:center;
-    /* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); */
 }
 
 .qr-code-generator p {
@@ -280,34 +279,6 @@ p {
 div#laptop.device-screen {
     background-color: #06283d;
 }
-
-/* Start on column 2, row 3
-3 columns wide and 6 rows long */
-
-.mobile {
-    grid-column: 2 / span 3;
-    grid-row:    4 / span 5;
-}
-
-#mobile.device-screen {
-    display:-webkit-inline-flex,
-    -moz-inline-box;
-    justify-content: center;
-    align-items: center;
-}
-  
-/* Start on column 13, row 4
-7 columns wide and 5 rows long */
-  
-.tablet {
-    grid-column: 13 / span 8;
-    grid-row:     4 / span 5;
-    border-left: solid 2vw #000;
-    border-radius: 1vw;
-}
-  
-/* Starts on column 3, row 2
-13 columns wide and 8 rows long */
   
 .laptop {
     grid-column: 4 / span 14;
