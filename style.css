@@ -136,14 +136,16 @@ h4 {
 
 .scroll-downs {
     position: absolute;
+    display: flex;
     right: 0;
     top: 90vh;
     left: 0;
     margin: 0 auto;
-    
+    align-items: center;
+    justify-content: center;
     width :34px;
     height: 55px;
-  }
+}
 
 .mousey {
     width: 3px;
@@ -153,6 +155,14 @@ h4 {
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
+}
+@media (max-height: 600px) {
+    .mousey {
+        width: calc(3px - 10vw);
+        padding: 10px calc(15px - 1vh);
+        height: calc(35px - 5vh);
+        border-radius: 25px;
+    }
 }
 
 .scroller {
@@ -165,6 +175,13 @@ h4 {
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
     animation-iteration-count: infinite;
 }
+@media (max-height: 600px) {
+    .scroller {
+        height: calc(10px - 1vh);
+
+    }
+}
+
 
 @keyframes scroll {
     0% { opacity: 0; }
@@ -197,8 +214,8 @@ h4 {
     background-color: #fff;
     box-shadow: -10px -10px 15px rgba(70 ,70 ,70 ,0.12),
                  10px  10px 15px rgba(70 ,70 ,70 ,0.12);
-    -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
-    transform:         translateY(50px) rotate(-5deg) translateZ(0);
+    -webkit-transform: translateY(5px) rotate(-1.5deg) translateZ(0);
+    transform:         translateY(5px) rotate(-1.5deg) translateZ(0);
     -webkit-transition-delay: 3s;
     -o-transition-delay: 3s;
     transition-delay: 3s;
@@ -211,7 +228,7 @@ h4 {
 .inView {
     opacity: 1;
     -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
-    transform: translateY(0px) rotate(0deg) translateZ(0);
+    transform:         translateY(0px) rotate(0deg) translateZ(0);
 }
 
 #about .img,
@@ -251,11 +268,6 @@ p {
     text-align: center;
     justify-content: space-between;
     align-items:center;
-}
-
-.qr-code-generator p {
-    color: #000;
-    font-size: 1.5vw;
 }
 
 /* PORTFOLIO SITE PREVIEWS IN GRID */
