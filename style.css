@@ -8,11 +8,14 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 15vh;
+    overflow-x: hidden;
 }
 
 body {
     background-color: #ECECEC;
     min-height: 100vh;
+    position: relative;
+    width: 100%;
 }
 
 header {
@@ -101,7 +104,7 @@ h3 {
 }
 
 h4 {
-    font-size: calc(14px + 0.5vw);
+    font-size: calc(14px + 1vw);
     padding-top: 3vh;
     padding-bottom: 1.5vh;
     display: flex;
@@ -131,7 +134,7 @@ h4 {
 .scroll-downs {
     position: absolute;
     right: 0;
-    bottom: 5vh;
+    top: 90vh;
     left: 0;
     margin: 0 auto;
     
@@ -189,7 +192,7 @@ h4 {
     margin-bottom: 5vh;
     border-radius: 2em;
     background-color: #fff;
-    box-shadow: -10px -10px 15px rgba(255,255,255,0.5 ),
+    box-shadow: -10px -10px 15px rgba(70 ,70 ,70 ,0.12),
                  10px  10px 15px rgba(70 ,70 ,70 ,0.12);
     -webkit-transform: translateY(50px) rotate(-5deg) translateZ(0);
     transform:         translateY(50px) rotate(-5deg) translateZ(0);
@@ -218,13 +221,13 @@ h4 {
 
 p {
     padding: 2vw 3vw;
-    font-size: 1.5vw;
+    font-size: calc(14px + 0.25vw);
     font-weight: 300;
 }
 
 @media (min-width: 800px) {
     p {
-        font-size: 1.5vw;
+        font-size: calc(12px + 1vw);
     }
 }
 
